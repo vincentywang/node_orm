@@ -6,5 +6,10 @@ var event = db.define("user", {
 	last_name: {type : 'text'},
 	email : {type : 'text'},
 	phone_num : {type : 'integer'},
-	time_created: {type : 'time'}
+	time_created: {type : 'time'},
+	methods : {
+		fullName : function() {
+			return this.first_name + ' ' + this.last_name;
+		}
+	}
 });
