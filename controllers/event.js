@@ -1,8 +1,8 @@
 var express = require('express');
-var router = express.Router;
+var router = express.Router();
 
-router.get('/', function(req, res, next) {
-	res.send('get event');
+router.get('/', function (req, res, next) {
+	res.send({'message' : 'get event'});
 });
 
 router.get('/add', function(req, res, next) {
