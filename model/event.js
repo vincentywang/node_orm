@@ -7,3 +7,4 @@ var event = db.define("event", {
 	location: {type : 'text'},
 	time : {type : 'date'}
 });
+
