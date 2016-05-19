@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var eventMod = require('../model/event');
 
 router.get('/', function (req, res, next) {
 	res.send({'message' : 'get event'});
