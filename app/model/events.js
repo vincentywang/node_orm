@@ -3,11 +3,11 @@ var db = require('../../db.js');
 var Event = db.define("events", {
 	id : {type : 'serial', key : true},
 	event_token : {type : 'text', key : false},
-	event_id : {type : 'text', key : false},
 	creator : {type : 'text', key : false},
 	receiver: {type : 'text', key : false},
-	location: {type : 'text', key : false},
-	time : {type : 'date', key : false}
+	event_meta : {type : 'text', key : false},
+	event_time: {type : 'date', time : true},
+	create_time : {type : 'date', time : false}
 });
 
 module.exports = Event;
